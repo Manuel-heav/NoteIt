@@ -16,12 +16,8 @@ app.use(expressLayouts);
 app.set("layout", "./layouts/main");
 app.set("view engine", "ejs");
 
-app.get("/", function (req, res) {
-  const locals = {
-    title: "Notes",
-  };
-  res.render("index", locals);
-});
+//routes
+app.use("/", require("./server/routes/index"));
 
 app.listen(PORT, () => {
   console.log(`Listening to ${PORT}`);
