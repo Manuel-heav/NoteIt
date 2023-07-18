@@ -1,0 +1,27 @@
+:root{
+    --background-color: #212529;
+    --primary-rgb: #fff;
+}
+
+body{
+    font-family: 'Inter', serif;
+    font-weight: 300;
+    font-size: 20px;
+    background-image: url(../img/noise-bg.png);
+    color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+.container-fluid-custom{
+    max-width: 1600px;
+}
+
+.btn{
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+}
