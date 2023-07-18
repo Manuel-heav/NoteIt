@@ -25,3 +25,22 @@ h1,h2,h3,h4,h5,h6{
     padding-right: 30px;
     border-radius: 10px;
 }
+ .home{
+        background: 
+        url('../img/human-1.svg') left bottom no-repeat,
+        url('../img/human-2.svg') right bottom no-repeat,
+        url('../img/noise-bg.svg') left top repeat;
+}    
+
+@media only screen and (max-width: 1000px){
+    .login{
+        display: none;
+    }
+
+    .signup{
+        display: none;
+    }
+    .home{
+        background-image: none;
+    }
+}
