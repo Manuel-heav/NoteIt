@@ -18,7 +18,6 @@ h1,h2,h3,h4,h5,h6{
 
 .container-fluid-custom{
     max-width: 1600px;
-    margin: auto;
 }
 
 .btn{
@@ -31,7 +30,13 @@ h1,h2,h3,h4,h5,h6{
         url('../img/human-1.svg') left bottom no-repeat,
         url('../img/human-2.svg') right bottom no-repeat,
         url('../img/noise-bg.svg') left top repeat;
+        height: 83vh;
 }    
+
+.about{
+    height: 100vh;
+    background: #fff;
+}
 
 @media only screen and (max-width: 1000px){
     .login{
@@ -43,5 +48,6 @@ h1,h2,h3,h4,h5,h6{
     }
     .home{
         background-image: none;
+        height: 60vh;
     }
 }
