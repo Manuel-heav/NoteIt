@@ -26,8 +26,6 @@ app.use(passport.session());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-connectDB();
-
 app.use(express.static("public"));
 
 app.use(expressLayouts);
@@ -44,6 +42,8 @@ app.get("*", function (req, res) {
   res.status(404).render("404");
 });
 
-app.listen(PORT, () => {
-  console.log(`Listening to ${PORT}`);
+connectDB().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Listening to ${PORT}`);
+  });
 });
