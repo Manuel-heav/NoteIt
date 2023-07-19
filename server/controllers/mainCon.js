@@ -1,27 +1,20 @@
 exports.home = async (req, res) => {
   const locals = {
-    title: "Notes",
+    title: "NoteIT",
   };
   res.render("index", { locals, layout: "../views/layouts/frontPage" });
 };
 
 exports.about = async (req, res) => {
   const locals = {
-    title: "Notes - About",
+    title: "NoteIT - About",
   };
   res.render("about", locals);
 };
 
-exports.faq = async (req, res) => {
+exports.contact = async (req, res) => {
   const locals = {
-    title: "Notes - FAQ",
+    title: "NoteIT - Contact",
   };
-  res.render("faq", locals);
-};
-
-exports.features = async (req, res) => {
-  const locals = {
-    title: "Notes - Features",
-  };
-  res.render("features", locals);
+  res.render("contact", locals);
 };

@@ -4,7 +4,6 @@ const mainCon = require("../controllers/mainCon");
 
 router.get("/", mainCon.home);
 router.get("/about", mainCon.about);
-router.get("/features", mainCon.features);
-router.get("/faq", mainCon.faq);
+router.get("/contact", mainCon.contact);
 
 module.exports = router;
