@@ -1,16 +1,17 @@
 <div class="container-fluid container-fluid-custom pb-5 mb-5">
 
     <div class="row">
+      <h2 class="mt-3">Search Results</h2>
       <% if(searchResults != '') { %>
         <% searchResults.forEach(function (note, index) { %>
           
-          <a href="/dashboard/item/<%= note._id %>">
-          <h4><%= note.title %></h4>
+          <a class="text-warning text-decoration-none" href="/dashboard/item/<%= note._id %>">
+          <h3><%= note.title %></h4>
           </a>
   
         <% }) %>
       <% } else { %>
-        <p>No items found.</p>
+        <p>Oops, No items found.</p>
       <% } %>
   
     </div>

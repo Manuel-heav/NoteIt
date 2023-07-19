@@ -11,13 +11,22 @@
   
     <div class="row">
       <% if (notes.length > 0) { for(var i=0; i < notes.length; i++) { %>
-        <div class="col-sm-3 mb-4">
+        <!-- <div class="col-sm-3 mb-4">
           <div class="card border-primary" style="min-height: 210px">
             <a href="/dashboard/item/<%= notes[i]._id %>" class="card-body text-decoration-none">
               <h5 class="card-title"><%= notes[i].title %></h5>
               <p class="card-text"><%= notes[i].body %></p>
             </a>
           </div>
+        </div> -->
+
+        <div class="card text-white bg-warning mb-3 me-3" style="max-width: 18rem;">
+          <a href="/dashboard/item/<%= notes[i]._id %>" class="card-body text-decoration-none">
+          <div class="card-header"><%= notes[i].title %></div>
+          <div class="card-body">
+            <p class="card-text"><%= notes[i].body %></p>
+          </div>
+        </a>
         </div>
       <%  }} else { %>
         <div class="row">
