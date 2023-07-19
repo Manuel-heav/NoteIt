@@ -4,8 +4,7 @@
       <div class="col">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
-            <li class="breadcrumb-item active"><%= note.title %></li>
+            <li class="breadcrumb-item mt-5"><a class="btn btn-warning text-decoration-none text-white" href="/dashboard">Back</a></li>
           </ol>
         </nav>
         <div class="col d-flex justify-content-between align-items-center">
@@ -19,12 +18,12 @@
   
   
     <form action="/dashboard/item/<%= noteID %>?_method=PUT" method="POST" class="position-relative">
-      <div class="form-group mb-4 position-absolute" style="left:1px; top:1px; right: 1px;">
+      <div class="form-group mb-4" style="left:1px; top:1px; right: 1px;">
         <input type="text" class="form-control fw-bold border-0 fs-4" id="title" name="title" value="<%= note.title %>" placeholder="Title">
       </div>
   
       <div class="form-group mb-4">
-        <textarea class="form-control pt-5 fs-4" id="body" name="body" placeholder="Take a note..." rows="12"><%= note.body %></textarea>
+        <textarea class="form-control pt-5 fs-4" id="body" name="body" placeholder="Take a note..." rows="6"><%= note.body %></textarea>
       </div>
   
       <div class="form-group">
