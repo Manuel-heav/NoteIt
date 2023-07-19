@@ -51,6 +51,17 @@ router.get("/failure", (req, res) => {
   res.send("It didnt work");
 });
 
+router.get("/logout", (req, res) => {
+  req.session.destroy((err) => {
+    if (err) {
+      console.log(err);
+      res.send("CAN NOT LOG OUT");
+    } else {
+      res.redirect("/");
+    }
+  });
+});
+
 passport.serializeUser(function (user, done) {
   done(null, user.id);
 });
