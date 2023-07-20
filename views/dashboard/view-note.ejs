@@ -17,7 +17,7 @@
     </div>
   
   
-    <form action="/dashboard/item/<%= noteID %>?_method=PUT" method="POST" class="position-relative">
+    <form action="/dashboard/<%= noteID %>?_method=PUT" method="POST" class="position-relative">
       <div class="form-group mb-4" style="left:1px; top:1px; right: 1px;">
         <input type="text" class="form-control fw-bold border-0 fs-4" id="title" name="title" value="<%= note.title %>" placeholder="Title">
       </div>
@@ -54,7 +54,7 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
     
-          <form action="/dashboard/item-delete/<%= noteID %>?_method=DELETE" method="POST" class="position-relative">
+          <form action="/dashboard/<%= noteID %>?_method=DELETE" method="POST" class="position-relative">
             <button type="submit" class="btn btn-primary">Delete Note</button>
           </form>
           
