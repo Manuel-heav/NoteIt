@@ -44,6 +44,6 @@ app.get("*", function (req, res) {
 
 connectDB().then(() => {
   app.listen(PORT, () => {
-    console.log(`Listening to ${PORT}`);
+    console.log("listening for requests");
   });
 });
