@@ -11,7 +11,7 @@
   
     <div class="row">
       <% if (notes.length > 0) { for(var i=0; i < notes.length; i++) { %>
-        <div class="card text-white bg-warning mb-3 me-3" style="max-width: 18rem;">
+        <div class="card text-dark bg-warning mb-3 me-3" style="max-width: 18rem;">
           <a href="/dashboard/item/<%= notes[i]._id %>" class="card-body text-decoration-none">
           <div class="card-header"><%= notes[i].title %></div>
           <div class="card-body">
