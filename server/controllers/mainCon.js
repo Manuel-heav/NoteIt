@@ -18,3 +18,10 @@ exports.contact = async (req, res) => {
   };
   res.render("contact", locals);
 };
+
+exports.docs = async (req, res) => {
+  const locals = {
+    title: "NoteIT - Documentation",
+  };
+  res.render("docs", locals);
+};
